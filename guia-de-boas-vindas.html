@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Guia do Hóspede — Di Maré Residence</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+<style>
+  html, body { margin: 0; padding: 0; background: #1a1a1a; }
+  deck-stage:not(:defined) { visibility: hidden; }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script src="deco.js"></script>
+</head>
+<body>
+
+<deck-stage width="794" height="1123">
+
+<!-- ═══════════════════════════════════════ 01 CAPA ═══════════════════ -->
+<section class="page page-cover" data-label="01 Capa">
+  <div class="cover-bg"></div>
+  <div class="cover-deco" aria-hidden="true">
+    <div class="cover-leaf cover-leaf-1" style="color:#2E7D3F"></div>
+    <div class="cover-leaf cover-leaf-2" style="color:#4FA85F"></div>
+    <div class="cover-leaf cover-leaf-3" style="color:#2E7D3F"></div>
+    <div class="cover-sun" style="color:#F4C430"></div>
+  </div>
+  <div class="cover-inner">
+    <div class="cover-top">
+      <div class="hdr-logo" style="color:white">
+        <div class="hdr-logo-mark">★</div>
+        <span data-edit contenteditable="true">DI MARÉ RESIDENCE</span>
+      </div>
+      <div class="cover-stamp">
+        <div class="stamp">Bem-<br/>vindo!</div>
+      </div>
+    </div>
+
+    <div class="cover-photo">
+      <image-slot id="cover-hero" placeholder="Arraste aqui uma foto do Di Maré / Porto de Galinhas"
+                  shape="rounded" radius="24" style="width:100%; height:100%"></image-slot>
+    </div>
+
+    <div class="cover-title-block">
+      <div class="cover-eyebrow">
+        <span class="script" style="font-size:22px; color:var(--c-sun)">guia do hóspede</span>
+      </div>
+      <h1 class="cover-title">
+        <span data-edit contenteditable="true" class="cover-title-name">Di Maré</span> Residence
+      </h1>
+      <p class="cover-sub" data-edit contenteditable="true">Sua experiência em Porto de Galinhas começa aqui.</p>
+
+      <div class="cover-meta">
+        <div class="cover-meta-cell">
+          <div class="cover-meta-label">Localização</div>
+          <div class="cover-meta-val" data-edit contenteditable="true">Porto de Galinhas · PE</div>
+        </div>
+        <div class="cover-meta-divider"></div>
+        <div class="cover-meta-cell">
+          <div class="cover-meta-label">Check-in</div>
+          <div class="cover-meta-val" data-edit contenteditable="true">a partir das 14h</div>
+        </div>
+        <div class="cover-meta-divider"></div>
+        <div class="cover-meta-cell">
+          <div class="cover-meta-label">Check-out</div>
+          <div class="cover-meta-val" data-edit contenteditable="true">até às 11h</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ 02 SUMÁRIO ════════════════ -->
+<section class="page" data-label="02 Sumário">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">02 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="eyebrow">índice</div>
+    <h2 class="h-section" style="margin: 6px 0 4px">O que você vai<br/>encontrar aqui.</h2>
+    <p class="lead" style="max-width:480px; margin-bottom: 26px">
+      Tudo o que você precisa para uma estadia tranquila. Toque em qualquer item para ir direto.
+    </p>
+
+    <div class="toc">
+      <div class="toc-col">
+        <a class="toc-row" data-jump="2"><span class="toc-num">01</span><span class="toc-name">Boas-vindas</span><span class="toc-pg">03</span></a>
+        <a class="toc-row" data-jump="3"><span class="toc-num">02</span><span class="toc-name">Recepção & Acesso</span><span class="toc-pg">04</span></a>
+        <a class="toc-row" data-jump="4"><span class="toc-num">03</span><span class="toc-name">Garagem & Energia</span><span class="toc-pg">05</span></a>
+        <a class="toc-row" data-jump="5"><span class="toc-num">04</span><span class="toc-name">Wi-Fi & Senhas</span><span class="toc-pg">06</span></a>
+        <a class="toc-row" data-jump="6"><span class="toc-num">05</span><span class="toc-name">Seu Apartamento</span><span class="toc-pg">07</span></a>
+        <a class="toc-row" data-jump="7"><span class="toc-num">06</span><span class="toc-name">Guia da Casa</span><span class="toc-pg">08</span></a>
+        <a class="toc-row" data-jump="8"><span class="toc-num">07</span><span class="toc-name">Comodidades</span><span class="toc-pg">09</span></a>
+      </div>
+      <div class="toc-col">
+        <a class="toc-row" data-jump="9"><span class="toc-num">08</span><span class="toc-name">Regras da Casa</span><span class="toc-pg">10</span></a>
+        <a class="toc-row" data-jump="10"><span class="toc-num">09</span><span class="toc-name">Check-out</span><span class="toc-pg">11</span></a>
+        <a class="toc-row" data-jump="11"><span class="toc-num">10</span><span class="toc-name">Localização</span><span class="toc-pg">12</span></a>
+        <a class="toc-row" data-jump="12"><span class="toc-num">11</span><span class="toc-name">O que Fazer</span><span class="toc-pg">13</span></a>
+        <a class="toc-row" data-jump="13"><span class="toc-num">12</span><span class="toc-name">Onde Comer</span><span class="toc-pg">14</span></a>
+        <a class="toc-row" data-jump="14"><span class="toc-num">13</span><span class="toc-name">Opções Veganas</span><span class="toc-pg">15</span></a>
+        <a class="toc-row" data-jump="15"><span class="toc-num">14</span><span class="toc-name">Obrigado!</span><span class="toc-pg">16</span></a>
+      </div>
+    </div>
+
+    <div class="grow"></div>
+    <div class="toc-quote">
+      <span class="script" style="font-size:34px; color:var(--c-coral); line-height:1">
+        Boa estadia!
+      </span>
+      <p class="muted" style="margin-top:6px">
+        Qualquer dúvida durante a hospedagem, conte com o anfitrião.
+      </p>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 03 BOAS-VINDAS ════════════ -->
+<section class="page" data-label="03 Boas-vindas">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">03 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">01</div>
+      <div class="section-title">Seja muito<br/>bem-vindo(a)!</div>
+    </div>
+
+    <div class="welcome-grid">
+      <div class="welcome-photo">
+        <image-slot id="welcome-photo" placeholder="Foto do apê / varanda"
+                    shape="rounded" radius="20" style="width:100%; height:300px"></image-slot>
+      </div>
+      <div class="welcome-msg card card-tinted-sky">
+        <span class="script" style="font-size:30px; color:var(--c-sky-deep); line-height:1">Olá! 😊</span>
+        <p style="margin:10px 0 0; font-size:13.5px; line-height:1.6">
+          É um prazer recebê-lo(a) em nossa acomodação, e espero que sua estadia seja
+          maravilhosa desde o primeiro instante!
+        </p>
+        <p style="margin:10px 0 0; font-size:13.5px; line-height:1.6">
+          Assim que possível, dê uma olhadinha geral no apartamento para verificar se está
+          tudo certo: limpeza, itens disponíveis, estrutura.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <p style="margin:0; font-size:13.5px; line-height:1.6">
+        Caso note qualquer detalhe que não esteja conforme estabelecido na plataforma, ou tenha
+        qualquer dúvida, <strong>me envie uma mensagem</strong>. Estarei à disposição para resolver
+        prontamente e garantir o seu conforto e bem-estar. Conte comigo durante toda a sua estadia!
+      </p>
+    </div>
+
+    <div class="card card-tinted-sun" style="margin-top:14px; display:flex; align-items:center; gap:14px">
+      <span style="font-size:30px">🌟</span>
+      <span class="script" style="font-size:28px; color:var(--c-ink); line-height:1.05">
+        Um excelente início de hospedagem!
+      </span>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 04 RECEPÇÃO & ACESSO ══════ -->
+<section class="page" data-label="04 Recepção & Acesso">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">04 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <div class="section-title">Recepção<br/>e acesso.</div>
+    </div>
+
+    <div class="card card-tinted-leaf" style="display:flex; gap:14px; align-items:flex-start; margin-bottom:16px">
+      <div class="icon-circle" style="background:var(--c-leaf); color:white" data-deco="home"></div>
+      <div>
+        <div class="h-sub" style="margin-bottom:4px">1 · Acesso com porteiro</div>
+        <p style="margin:0; font-size:13px; line-height:1.55">
+          Seu acesso será feito com o auxílio do porteiro na recepção das
+          <strong>9h à 0h</strong> e das <strong>1h às 3h</strong>. Caso o porteiro não esteja
+          presente, siga as instruções de acesso sem porteiro abaixo.
+        </p>
+      </div>
+    </div>
+
+    <div class="card card-tinted-sky" style="padding:22px">
+      <div class="h-sub" style="margin-bottom:6px; color:var(--c-sky-deep)">2 · Acesso sem porteiro</div>
+      <div style="display:flex; gap:18px; align-items:center; margin:10px 0 14px">
+        <div class="icon-circle icon-circle-lg" style="background:var(--c-sky-deep); color:white" data-deco="key"></div>
+        <div>
+          <div class="eyebrow" style="color:var(--c-sky-deep)">SENHA DA RECEPÇÃO</div>
+          <div class="lock-code"><span data-edit contenteditable="true">2 7 6 9 1</span></div>
+          <button class="copy-btn" data-copy="27691" style="margin-top:6px">Copiar código</button>
+        </div>
+      </div>
+      <ol class="numbered-list">
+        <li>No display do porteiro eletrônico, com a mão já na maçaneta, pressione a tecla <strong>"SENHA"</strong>.</li>
+        <li>Digite o código <strong>27691</strong>.</li>
+        <li>Um sinal luminoso <strong>verde</strong> acenderá.</li>
+        <li>Assim que a luz verde acender, <strong>puxe imediatamente</strong> a maçaneta para abrir.</li>
+      </ol>
+    </div>
+
+    <div class="card card-tinted-coral" style="margin-top:14px; display:flex; gap:12px; align-items:center">
+      <div class="icon-circle" style="background:var(--c-coral); color:white" data-deco="alert"></div>
+      <p style="margin:0; font-size:12.5px; line-height:1.5">
+        O sistema de segurança fecha automaticamente em poucos segundos — a abertura deve ser rápida
+        após o sinal verde. Este mesmo procedimento também pode ser usado pela <strong>Praça 5</strong>.
+      </p>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 05 GARAGEM & ENERGIA ══════ -->
+<section class="page" data-label="05 Garagem & Energia">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">05 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">03</div>
+      <div class="section-title">Garagem<br/>e energia.</div>
+    </div>
+
+    <div class="card" style="margin-bottom:16px">
+      <div style="display:flex; gap:14px; align-items:flex-start">
+        <div class="icon-circle icon-circle-lg" style="background:var(--c-sky); color:white" data-deco="car"></div>
+        <div>
+          <div class="h-sub" style="margin-bottom:6px">Garagem · 18 vagas rotativas</div>
+          <p style="margin:0; font-size:13px; line-height:1.55">
+            Acesso pela <strong>Praça 5</strong>. Utilize as vagas livres disponíveis, sem custo.
+            No primeiro acesso, o porteiro pode auxiliar — caso esteja ausente, o
+            <strong>controle remoto do portão</strong> está na prateleira do flat.
+          </p>
+        </div>
+      </div>
+      <div class="callout callout-coral" style="margin-top:12px">
+        <span data-deco="alert" class="callout-ic"></span>
+        Ao sair, o portão se fecha automaticamente <strong>40 segundos</strong> após o acionamento.
+      </div>
+    </div>
+
+    <div class="card card-tinted-sun">
+      <div style="display:flex; gap:14px; align-items:flex-start">
+        <div class="icon-circle icon-circle-lg" style="background:var(--c-sun); color:var(--c-ink)" data-deco="sparkle"></div>
+        <div>
+          <div class="h-sub" style="margin-bottom:6px">Economizador de energia</div>
+          <p style="margin:0; font-size:13px; line-height:1.55">
+            Este flat possui economizador de energia. Para que a energia funcione normalmente,
+            é necessário <strong>acionar o botão</strong> localizado próximo ao interruptor na
+            entrada, <strong>sempre que a porta do apartamento for fechada</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="callout callout-sun" style="margin-top:12px">
+        <span style="font-size:16px">💡</span>
+        Se permanecer alguém dentro do flat, acione novamente o botão para a energia continuar funcionando.
+      </div>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 06 WI-FI & SENHAS ═════════ -->
+<section class="page" data-label="06 Wi-Fi & Senhas">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">06 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">04</div>
+      <div class="section-title">Wi-Fi &<br/>senhas.</div>
+    </div>
+
+    <p class="lead" style="max-width:520px; margin-bottom:18px">
+      Encontre a rede e a senha do seu andar. Toque em "Copiar" para copiar a senha.
+    </p>
+
+    <div class="apt-grid">
+      <div class="apt-card">
+        <div class="apt-head"><span class="apt-num">201</span><span class="apt-floor">1º andar</span></div>
+        <div class="apt-field"><span class="apt-lbl" data-deco="wifi"></span>
+          <div><div class="apt-key">Rede</div><div class="apt-val" data-edit contenteditable="true">PORTO DI MARE 1 ANDAR</div></div>
+        </div>
+        <div class="apt-field"><span class="apt-lbl">🔑</span>
+          <div><div class="apt-key">Senha Wi-Fi</div><div class="apt-val mono" id="wifi-201" data-edit contenteditable="true">dimare@porto</div></div>
+          <button class="copy-btn copy-btn-sm" data-copy-id="wifi-201">Copiar</button>
+        </div>
+        <div class="apt-field"><span class="apt-lbl">🔒</span>
+          <div><div class="apt-key">Cadeado</div><div class="apt-val mono" data-edit contenteditable="true">2716</div></div>
+        </div>
+      </div>
+
+      <div class="apt-card">
+        <div class="apt-head"><span class="apt-num">202</span><span class="apt-floor">1º andar</span></div>
+        <div class="apt-field"><span class="apt-lbl" data-deco="wifi"></span>
+          <div><div class="apt-key">Rede</div><div class="apt-val" data-edit contenteditable="true">PORTO DI MARE 1 ANDAR</div></div>
+        </div>
+        <div class="apt-field"><span class="apt-lbl">🔑</span>
+          <div><div class="apt-key">Senha Wi-Fi</div><div class="apt-val mono" id="wifi-202" data-edit contenteditable="true">dimare@porto</div></div>
+          <button class="copy-btn copy-btn-sm" data-copy-id="wifi-202">Copiar</button>
+        </div>
+        <div class="apt-field"><span class="apt-lbl">🔒</span>
+          <div><div class="apt-key">Cadeado</div><div class="apt-val mono" data-edit contenteditable="true">2716</div></div>
+        </div>
+      </div>
+
+      <div class="apt-card">
+        <div class="apt-head"><span class="apt-num">301</span><span class="apt-floor">2º andar</span></div>
+        <div class="apt-field"><span class="apt-lbl" data-deco="wifi"></span>
+          <div><div class="apt-key">Rede</div><div class="apt-val" data-edit contenteditable="true">PORTO DI MARE 2 ANDAR</div></div>
+        </div>
+        <div class="apt-field"><span class="apt-lbl">🔑</span>
+          <div><div class="apt-key">Senha Wi-Fi</div><div class="apt-val mono" id="wifi-301" data-edit contenteditable="true">dimare@porto</div></div>
+          <button class="copy-btn copy-btn-sm" data-copy-id="wifi-301">Copiar</button>
+        </div>
+        <div class="apt-field"><span class="apt-lbl">🔒</span>
+          <div><div class="apt-key">Cadeado</div><div class="apt-val mono" data-edit contenteditable="true">2716</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-tinted-sky" style="margin-top:16px; display:flex; gap:14px; align-items:center">
+      <div class="icon-circle" style="background:var(--c-sky-deep); color:white" data-deco="key"></div>
+      <div>
+        <div class="h-sub" style="margin-bottom:2px">Senha da recepção (acesso ao prédio)</div>
+        <p class="muted" style="margin:0; font-size:13px">
+          Código <strong class="mono" style="color:var(--c-sky-deep)">27691</strong> — veja o passo a passo na página de acesso.
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 07 SEU APARTAMENTO ════════ -->
+<section class="page" data-label="07 Seu Apartamento">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">07 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">05</div>
+      <div class="section-title">Seu<br/>apartamento.</div>
+    </div>
+
+    <p class="lead" style="max-width:520px; margin-bottom:18px">
+      Tudo que você encontra para uma estadia completa.
+    </p>
+
+    <div class="amenities-grid">
+      <div class="amenity"><span class="amenity-icon">🧊</span> Geladeira</div>
+      <div class="amenity"><span class="amenity-icon">🔥</span> Fogão</div>
+      <div class="amenity"><span class="amenity-icon">📺</span> Televisão</div>
+      <div class="amenity"><span class="amenity-icon">♨️</span> Microondas</div>
+      <div class="amenity"><span class="amenity-icon">🥪</span> Sanduicheira</div>
+      <div class="amenity"><span class="amenity-icon">🥤</span> Liquidificador</div>
+      <div class="amenity"><span class="amenity-icon">🍟</span> Air Fryer</div>
+      <div class="amenity"><span class="amenity-icon">💈</span> Secador de cabelo</div>
+      <div class="amenity"><span class="amenity-icon">🌬️</span> Ar-condicionado</div>
+      <div class="amenity"><span class="amenity-icon">🌀</span> Ventiladores de teto</div>
+      <div class="amenity"><span class="amenity-icon">🛏️</span> Colchões de mola</div>
+      <div class="amenity"><span class="amenity-icon">🧺</span> Ferro e tábua</div>
+      <div class="amenity"><span class="amenity-icon">🧹</span> Vassoura e rodo</div>
+      <div class="amenity"><span class="amenity-icon">👚</span> Varal de chão</div>
+      <div class="amenity"><span class="amenity-icon">🥅</span> Rede de descanso</div>
+    </div>
+
+    <div class="grid-3" style="margin-top:16px">
+      <div class="card card-tinted-sand">
+        <div class="apt-mini">201 · 1º andar</div>
+        <p class="muted" style="margin:6px 0 0; font-size:12px; line-height:1.45">
+          2 ar-condicionados · 3 ventiladores de teto · 2 colchões de mola.
+        </p>
+      </div>
+      <div class="card card-tinted-sand">
+        <div class="apt-mini">202 · 1º andar</div>
+        <p class="muted" style="margin:6px 0 0; font-size:12px; line-height:1.45">
+          2 ar-condicionados (quarto e sala) · 2 ventiladores com luminária na sala e quarto.
+        </p>
+      </div>
+      <div class="card card-tinted-sand">
+        <div class="apt-mini">301 · 2º andar</div>
+        <p class="muted" style="margin:6px 0 0; font-size:12px; line-height:1.45">
+          Forno elétrico · 2 ar-condicionados e 3 ventiladores (sala + quartos 1 e 2).
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 08 GUIA DA CASA ═══════════ -->
+<section class="page" data-label="08 Guia da Casa">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">08 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">06</div>
+      <div class="section-title">Guia<br/>da casa.</div>
+    </div>
+
+    <div class="card" style="margin-bottom:14px">
+      <div class="h-sub" style="margin-bottom:10px">🌀 Ventilador de teto</div>
+      <div class="switch-list">
+        <div class="switch-row"><span class="switch-tag">1</span><span>Luz principal do ventilador — liga/desliga.</span></div>
+        <div class="switch-row"><span class="switch-tag">2</span><span>Luz de LED — liga/desliga.</span></div>
+        <div class="switch-row"><span class="switch-tag">3</span><span>Inversão de rotação (ventilação ou exaustão).</span></div>
+        <div class="switch-row"><span class="switch-tag" style="background:var(--c-coral)">⟳</span><span>Botão rotativo — regula a velocidade do vento.</span></div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card card-tinted-leaf">
+        <div class="h-sub" style="margin-bottom:8px">🗑️ Coleta de lixo</div>
+        <p style="margin:0; font-size:12.5px; line-height:1.5">
+          A zeladoria recolhe diariamente, das <strong>9h às 12h</strong>. Coloque a
+          <strong>placa de coleta</strong> na maçaneta externa dentro desse horário. Não é
+          permitido deixar lixo na área externa — fora do horário, descarte no subsolo da garagem.
+        </p>
+      </div>
+      <div class="card card-tinted-sky">
+        <div class="h-sub" style="margin-bottom:8px">🔐 Fechadura travou?</div>
+        <p style="margin:0; font-size:12.5px; line-height:1.5">
+          Se a bateria da fechadura inteligente descarregar, use o <strong>cadeado ao lado da porta</strong>.
+          Dentro do cofre há pilhas (palito e moeda), uma chave e uma TAG.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <div class="h-sub" style="margin-bottom:10px">Passo a passo da fechadura</div>
+      <div class="step-flow">
+        <div class="step-flow-item"><span class="step-flow-n">1</span>Abra o cadeado ao lado da porta.</div>
+        <div class="step-flow-item"><span class="step-flow-n">2</span>Pegue a chave e as pilhas no cofre.</div>
+        <div class="step-flow-item"><span class="step-flow-n">3</span>Use a chave na parte inferior da fechadura.</div>
+        <div class="step-flow-item"><span class="step-flow-n">4</span>Por dentro, troque as pilhas para reativar.</div>
+      </div>
+      <div class="callout callout-coral" style="margin-top:12px">
+        <span data-deco="alert" class="callout-ic"></span>
+        Depois de resolver, devolva a chave e a TAG ao cofre, feche-o e embaralhe a senha.
+      </div>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 09 COMODIDADES ════════════ -->
+<section class="page" data-label="09 Comodidades">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">09 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">07</div>
+      <div class="section-title">Comodidades<br/>& serviços.</div>
+    </div>
+
+    <div class="row gap-lg" style="align-items:flex-start">
+      <div style="flex:1">
+        <div class="card card-tinted-sky" style="margin-bottom:14px">
+          <div style="display:flex; gap:14px; align-items:flex-start">
+            <span style="font-size:30px">🛏️</span>
+            <div>
+              <div class="h-sub" style="margin-bottom:6px">Troca de enxoval (cama e banho)</div>
+              <ul class="bullet-list" style="font-size:13px">
+                <li><span class="dot" style="background:var(--c-sky); color:white">✓</span><span>Válido apenas para estadias <strong>superiores a 5 dias</strong>.</span></li>
+                <li><span class="dot" style="background:var(--c-sky); color:white">✓</span><span>Solicitação via <strong>agendamento</strong> com o anfitrião.</span></li>
+                <li><span class="dot" style="background:var(--c-sky); color:white">✓</span><span>Prazo mínimo: <strong>24h de antecedência</strong>.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-tinted-leaf">
+          <div style="display:flex; gap:14px; align-items:flex-start">
+            <span style="font-size:30px">♻️</span>
+            <div>
+              <div class="h-sub" style="margin-bottom:6px">Devolução de itens</div>
+              <p style="margin:0; font-size:13px; line-height:1.55">
+                Após utilizar qualquer item, devolva-o ao mesmo local em que foi encontrado, para que
+                fique organizado para os próximos hóspedes. 🙏
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width:260px; flex-shrink:0">
+        <image-slot id="comod-photo" placeholder="Foto da área comum / piscina"
+                    shape="rounded" radius="20" style="width:100%; height:300px"></image-slot>
+        <div class="card card-tinted-sun" style="margin-top:14px; text-align:center; padding:14px 16px">
+          <span class="script" style="font-size:26px; color:var(--c-ink); line-height:1.05">
+            fique à vontade!
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 10 REGRAS ═════════════════ -->
+<section class="page" data-label="10 Regras">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">10 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">08</div>
+      <div class="section-title">Regras<br/>da casa.</div>
+    </div>
+    <p class="lead" style="max-width:520px; margin-bottom:22px">
+      Regrinhas importantes para o bem-estar de todos. ♡
+    </p>
+
+    <div class="rules-grid">
+      <div class="rule-card rule-no"><div class="rule-mark">✕</div><div class="rule-title">🐶 Pets</div><div class="rule-desc">Não são permitidos.</div></div>
+      <div class="rule-card rule-no"><div class="rule-mark">✕</div><div class="rule-title">🔊 Som alto</div><div class="rule-desc">Proibido no apê e áreas comuns, inclusive a piscina.</div></div>
+      <div class="rule-card rule-no"><div class="rule-mark">✕</div><div class="rule-title">🥂 Vidro no rooftop</div><div class="rule-desc">Use copos de plástico ou acrílico no rooftop.</div></div>
+      <div class="rule-card rule-no"><div class="rule-mark">✕</div><div class="rule-title">🚫 Visitas / festas</div><div class="rule-desc">Visitas, festas ou eventos não são autorizados.</div></div>
+      <div class="rule-card rule-yes"><div class="rule-mark">✓</div><div class="rule-title">🏊 Piscina</div><div class="rule-desc">Disponível das 8h às 21h.</div></div>
+      <div class="rule-card rule-yes"><div class="rule-mark">✓</div><div class="rule-title">🔥 Churrasqueira</div><div class="rule-desc">Permitida com agendamento prévio na recepção.</div></div>
+      <div class="rule-card rule-yes"><div class="rule-mark">✓</div><div class="rule-title">🪑 Mesas do rooftop</div><div class="rule-desc">Podem ser usadas após as 21h, mas sem barulho.</div></div>
+      <div class="rule-card rule-yes"><div class="rule-mark">✓</div><div class="rule-title">🚬 Fumar</div><div class="rule-desc">Apenas na varanda ou janelas, com respeito aos vizinhos.</div></div>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 11 CHECK-OUT ══════════════ -->
+<section class="page" data-label="11 Check-out">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">11 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">09</div>
+      <div class="section-title">Antes de<br/>ir embora.</div>
+    </div>
+    <p class="lead" style="max-width:520px; margin-bottom:18px">
+      Para facilitar a finalização da sua hospedagem, peço a gentileza de:
+    </p>
+
+    <div class="checkout-list">
+      <label class="checkout-item"><input type="checkbox" /><span class="check"></span><div><strong>Toalhas usadas</strong><span class="muted"> — sobre o tampo da bacia sanitária.</span></div></label>
+      <label class="checkout-item"><input type="checkbox" /><span class="check"></span><div><strong>Cadeiras de praia</strong><span class="muted"> — devolva limpas no suporte suspenso.</span></div></label>
+      <label class="checkout-item"><input type="checkbox" /><span class="check"></span><div><strong>Esquadrias e cortinas</strong><span class="muted"> — feche tudo e mantenha as cortinas fechadas.</span></div></label>
+      <label class="checkout-item"><input type="checkbox" /><span class="check"></span><div><strong>Utensílios de cozinha</strong><span class="muted"> — deixe lavados.</span></div></label>
+      <label class="checkout-item"><input type="checkbox" /><span class="check"></span><div><strong>Lixo</strong><span class="muted"> — entregue à colaboradora ou deixe no balde do subsolo.</span></div></label>
+      <label class="checkout-item"><input type="checkbox" /><span class="check"></span><div><strong>Controle da garagem</strong><span class="muted"> — deixe na prateleira da sala.</span></div></label>
+      <label class="checkout-item"><input type="checkbox" /><span class="check"></span><div><strong>Porta</strong><span class="muted"> — certifique-se de que foi bem fechada, e me avise ao sair.</span></div></label>
+    </div>
+
+    <div class="card card-tinted-coral" style="margin-top:16px; display:flex; gap:12px; align-items:flex-start">
+      <div class="icon-circle" style="background:var(--c-coral); color:white" data-deco="alert"></div>
+      <div>
+        <div class="h-sub" style="margin-bottom:4px">⚠️ Observação importante — Toalhas</div>
+        <p class="muted" style="margin:0; font-size:12.5px; line-height:1.5">
+          As toalhas molhadas <strong>jamais devem ser deixadas penduradas no box do banho</strong> — isso
+          pode danificar a estrutura e gerar prejuízo ao hóspede. Deixe-as <strong>exclusivamente sobre o
+          tampo do vaso sanitário</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 12 LOCALIZAÇÃO ════════════ -->
+<section class="page" data-label="12 Localização">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">12 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">10</div>
+      <div class="section-title">Localização<br/>& região.</div>
+    </div>
+
+    <div class="card card-tinted-sand" style="margin-bottom:14px">
+      <p style="margin:0; font-size:13.5px; line-height:1.55">
+        <strong>Porto de Galinhas</strong> é um distrito de Ipojuca, PE, a <strong>60 km de Recife</strong>.
+        É uma vila diurna — os estabelecimentos funcionam geralmente das <strong>11h às 23h</strong>.
+      </p>
+    </div>
+
+    <div class="region-map card" style="padding:0; overflow:hidden">
+      <div class="region-map-inner">
+        <div class="map-grid"></div>
+        <div class="region-pin region-pin-home" style="top:48%; left:46%"><span>🏠</span></div>
+        <div class="region-pin" style="top:28%; left:24%" data-color="coral"><span>🌂</span></div>
+        <div class="region-pin" style="top:66%; left:30%" data-color="sky"><span>🏖️</span></div>
+        <div class="region-pin" style="top:32%; left:70%" data-color="sun"><span>💳</span></div>
+        <div class="region-pin" style="top:68%; left:66%" data-color="leaf"><span>🛒</span></div>
+      </div>
+    </div>
+
+    <div class="region-list" style="margin-top:14px; gap:8px">
+      <div class="region-row">
+        <div class="region-tag" style="background:var(--c-ink)">🏠</div>
+        <div style="flex:1"><strong>Di Maré Residence — você está aqui</strong>
+          <div class="muted" style="font-size:12px" data-edit contenteditable="true">Rua das Piscinas Naturais, 1104 · Centro · Porto de Galinhas</div></div>
+      </div>
+      <div class="grid-2" style="gap:8px">
+        <div class="region-row"><div class="region-tag" style="background:var(--c-coral)">🌂</div>
+          <div style="flex:1"><strong>Rua das Sombrinhas</strong><div class="muted" style="font-size:11.5px">Sombrinhas coloridas, comércio e gastronomia.</div></div></div>
+        <div class="region-row"><div class="region-tag" style="background:var(--c-sky)">🏖️</div>
+          <div style="flex:1"><strong>Praça e Calçadão</strong><div class="muted" style="font-size:11.5px">Feirinha e acesso às piscinas naturais.</div></div></div>
+        <div class="region-row"><div class="region-tag" style="background:var(--c-sun); color:var(--c-ink)">💳</div>
+          <div style="flex:1"><strong>Caixas 24h</strong><div class="muted" style="font-size:11.5px">Saques na região central.</div></div></div>
+        <div class="region-row"><div class="region-tag" style="background:var(--c-leaf)">🛒</div>
+          <div style="flex:1"><strong>Supermercados</strong><div class="muted" style="font-size:11.5px">Abastecimento no centro de Porto.</div></div></div>
+      </div>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 13 O QUE FAZER ════════════ -->
+<section class="page" data-label="13 O que Fazer">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">13 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">11</div>
+      <div class="section-title">O que fazer<br/>em Porto.</div>
+    </div>
+
+    <div class="do-grid">
+      <div class="do-card do-big" style="background:var(--c-sky)">
+        <div class="do-photo">
+          <image-slot id="do-1" placeholder="Passeio de jangada"
+                      shape="rect" style="width:100%; height:100%"></image-slot>
+        </div>
+        <div class="do-content">
+          <div class="chip chip-coral" style="align-self:flex-start">⭐ IMPERDÍVEL</div>
+          <div class="do-name">🛶 Passeio de Jangada</div>
+          <div class="do-desc">Água mansa, morna e cristalina, peixinhos coloridos e corais. Cenário de cartão-postal.</div>
+        </div>
+      </div>
+      <div class="do-card" style="background:var(--c-leaf)">
+        <div class="do-name">🚙 Passeio de Buggy</div>
+        <div class="do-desc">Tour pelas praias: Pontal de Maracaípe, Maracaípe, Cupe e Muro Alto.</div>
+      </div>
+      <div class="do-card" style="background:var(--c-coral)">
+        <div class="do-name">🤿 Mergulho com Cilindro</div>
+        <div class="do-desc">Para os aventureiros. Em média, 30 minutos de mergulho.</div>
+      </div>
+      <div class="do-card" style="background:var(--c-sun); color:var(--c-ink)">
+        <div class="do-name">🏘️ Centro da Vila</div>
+        <div class="do-desc">Restaurantes, bares com música ao vivo e feirinha de artesanato.</div>
+        <div class="do-tag" style="background:rgba(31,45,61,.15)">agito</div>
+      </div>
+      <div class="do-card" style="background:#7B5CB6">
+        <div class="do-name">🚐 Transfer 24h</div>
+        <div class="do-desc">Traslados aeroporto/hotel e passeios. Consulte o anfitrião para indicação.</div>
+      </div>
+    </div>
+
+    <div class="card card-tinted-sand" style="margin-top:14px; display:flex; gap:12px; align-items:center">
+      <div class="icon-circle" style="background:var(--c-ink); color:var(--c-cream)" data-deco="alert"></div>
+      <p class="muted" style="margin:0; font-size:11.5px; line-height:1.45">
+        As indicações de passeios e transfer são cortesia, espontâneas e não comerciais, baseadas em boas
+        experiências anteriores — sem qualquer vínculo ou responsabilidade do anfitrião. Consulte o anfitrião para as empresas.
+      </p>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 14 ONDE COMER ═════════════ -->
+<section class="page" data-label="14 Onde Comer">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">14 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">12</div>
+      <div class="section-title">Onde comer<br/>em Porto.</div>
+    </div>
+
+    <div class="dine-grid">
+      <div class="dine-card"><div class="dine-name">Domingos Restaurante</div><div class="dine-desc">Truta, salmão e lagosta, drinques e carta de vinhos. Decoração delicada.</div></div>
+      <div class="dine-card"><div class="dine-name">GIROSKKA-BAR <span class="dine-since">desde 1994</span></div><div class="dine-desc">Drinks, música ao vivo e vibe única. Das 10h às 3h.</div></div>
+      <div class="dine-card"><div class="dine-name">Café da Moeda</div><div class="dine-desc">Ótimo café da manhã. Café excelente e atendimento maravilhoso.</div></div>
+      <div class="dine-card"><div class="dine-name">Farol Café</div><div class="dine-desc">Na mesma rua do Di Maré. Café da manhã pago por consumo.</div></div>
+      <div class="dine-card"><div class="dine-name">Ristorante Mamma Mia</div><div class="dine-desc">Pizza de massa fina e comida italiana.</div></div>
+      <div class="dine-card"><div class="dine-name">Caldinho do Nenen</div><div class="dine-desc">Varanda à beira-mar e culinária de frutos do mar.</div></div>
+      <div class="dine-card"><div class="dine-name">MaRdioca</div><div class="dine-desc">No coração de Porto. Cardápio cheio de delícias e preço acessível.</div></div>
+      <div class="dine-card"><div class="dine-name">Pousada Maihai <span class="dine-since">café regional</span></div><div class="dine-desc">Frutas tropicais, sucos, omeletes e tapiocas. Reserva com 1 dia de antecedência.</div></div>
+      <div class="dine-card"><div class="dine-name">Restaurante Beijupirá</div><div class="dine-desc">Arquitetura rústica e pescados. Camarão com mel de engenho e arroz com maracujá.</div></div>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 15 VEGANO ════════════════ -->
+<section class="page" data-label="15 Opções Veganas">
+  <header class="hdr">
+    <div class="hdr-logo"><div class="hdr-logo-mark">★</div><span data-edit contenteditable="true">DI MARÉ RESIDENCE</span></div>
+    <div class="hdr-pg">15 / 16</div>
+  </header>
+  <div class="page-pad">
+    <div class="section-header">
+      <div class="section-num">13</div>
+      <div class="section-title">Opções<br/>veganas.</div>
+    </div>
+    <p class="lead" style="max-width:520px; margin-bottom:20px">
+      Para quem prefere o cardápio plant-based, esses são ótimos endereços. 🌱
+    </p>
+
+    <div class="dine-list">
+      <div class="dine-row">
+        <div class="dine-row-tag" style="background:var(--c-leaf)">🍕</div>
+        <div><div class="dine-name">Pizzaria Paulista</div><div class="dine-desc">Pizzas artesanais de fermentação natural e queijos vegetais para montar do seu jeito.</div></div>
+      </div>
+      <div class="dine-row">
+        <div class="dine-row-tag" style="background:var(--c-sky)">🥗</div>
+        <div><div class="dine-name">La Crêperie</div><div class="dine-desc">Especializada em crepes e saladas, no belíssimo balneário de Porto de Galinhas.</div></div>
+      </div>
+      <div class="dine-row">
+        <div class="dine-row-tag" style="background:var(--c-coral)">🍽️</div>
+        <div><div class="dine-name">Teju Gastronomia</div><div class="dine-desc">"Ele Sal, Ela Doce" — casal de chefs paulistas. Pratos e sobremesas autorais.</div></div>
+      </div>
+      <div class="dine-row">
+        <div class="dine-row-tag" style="background:var(--c-sun); color:var(--c-ink)">🍇</div>
+        <div><div class="dine-name">Ponto Do Açaí</div><div class="dine-desc">O melhor açaí, além de crepes, tapiocas, sanduíches, sucos e smoothies.</div></div>
+      </div>
+    </div>
+  </div>
+  <footer class="ftr">
+    <span data-edit contenteditable="true">Di Maré Residence · Porto de Galinhas</span>
+    <a class="ftr-wpp" data-wpp>Falar com o anfitrião</a>
+  </footer>
+</section>
+
+<!-- ═══════════════════════════════════════ 16 OBRIGADO ══════════════ -->
+<section class="page page-thanks" data-label="16 Obrigado">
+  <div class="thanks-bg"></div>
+  <div class="thanks-deco" aria-hidden="true">
+    <div class="thanks-leaf thanks-leaf-1" style="color:#2E7D3F"></div>
+    <div class="thanks-leaf thanks-leaf-2" style="color:#4FA85F"></div>
+    <div class="thanks-flower" style="color:#EE6C4D"></div>
+  </div>
+  <div class="thanks-inner">
+    <div class="thanks-eyebrow">
+      <span class="script" style="font-size:32px; color:var(--c-sun)">com carinho,</span>
+    </div>
+    <h1 class="thanks-title">Tenha uma<br/>ótima estadia!</h1>
+    <p class="thanks-msg">
+      Esperamos que sua experiência em Porto de Galinhas seja inesquecível. ♡<br/>
+      Conte com a gente durante toda a hospedagem.
+    </p>
+    <div class="thanks-stars">★★★★★</div>
+    <p class="thanks-rating">
+      Se gostou, deixe sua <strong>avaliação</strong> — significa muito para nós.
+    </p>
+    <div class="thanks-cta">
+      <a class="ftr-wpp thanks-wpp" data-wpp>Falar com o anfitrião</a>
+    </div>
+    <div class="thanks-sign">
+      <span class="script" style="font-size:48px; color:white">
+        <span data-edit contenteditable="true">Di Maré Residence</span>
+      </span>
+      <div class="thanks-handle" data-edit contenteditable="true">© 2024 · Porto de Galinhas · PE</div>
+    </div>
+  </div>
+</section>
+
+</deck-stage>
+
+<script src="image-slot.js"></script>
+<script src="deck-stage.js"></script>
+<script src="app.js"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks.jsx"></script>
+
+</body>
+</html>
